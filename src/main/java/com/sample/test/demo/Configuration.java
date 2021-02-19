@@ -28,15 +28,18 @@ public class Configuration {
     }
 
     public String getBrowser() {
-        return getProperty("browser");
+        return getProperty("chrome");
+        // return getProperty("bogus");
     }
 
     public String getPlatform() {
-        return getProperty("platform");
+        return getProperty("windows");
     }
 
     public String getUrl() {
-        return getProperty("url");
+        return "file:///C:/Users/gle62/Documents/NBC/SQEDemonstrationChallengeUIProject-master/src/test/resources/files/index.html";
+        // return getProperty("file:///C:/Users/gle62/Documents/NBC/SQEDemonstrationChallengeUIProject-master/src/test/resources/files/index.html");
+        // return getProperty("url");
     }
     public String getProperty(String propertyName) {
         return configProperties.getProperty(propertyName);
